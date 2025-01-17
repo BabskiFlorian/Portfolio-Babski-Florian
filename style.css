@@ -23,6 +23,12 @@ body {
     flex-direction: column;
     font-family: sans-serif;
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: ;
+    color:var(--ecriture);
+}
 
 h1 {
     min-height:15vh;
