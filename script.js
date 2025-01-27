@@ -26,3 +26,12 @@ function toggleNav(){
   navigation.classList.toggle("active")
 }
 
+function getUserInfo() {
+  fetch(`https://api.github.com/users/BabskiFlorian`)
+    .then(response => response.json())
+    .then(data => {
+      const usernameDiv = document.getElementById('username');
+      usernameDiv.textContent = data.login;
+    })
+}
+getUserInfo();
