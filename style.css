@@ -47,10 +47,9 @@ h1 {
 }
 h2 {    
     color: var(--ecriture);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 25px;
-
+    font-size: 20rem;
+    padding-top: 2rem;
+    text-shadow: 30px 30px 40px #000000; /* Ombre noire */
 }
 p{   
     color: var(--ecriture);
@@ -99,6 +98,8 @@ table {
     align-items: center;
     border-top-right-radius: 10px;
   }
+.acceuil{
+  }
 .logo{
 margin: 100px;
 }
@@ -114,7 +115,13 @@ margin: 100px;
     width: 400px; 
     height: 400px; 
   }
-
+  img:hover {
+    
+    filter: brightness(1.1);
+    transition: 0.3s;
+    box-shadow: grey 0px 0px 10rem;
+    
+  }
   .projet-container {
     clear: both;
     padding: 20px;
