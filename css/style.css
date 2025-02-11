@@ -32,11 +32,10 @@ footer {
 
 h1 {
     min-height:12svh;
-    margin-top: 0;
+    margin-top: 7rem;
     font-size: 7.5rem;
     color: var(--ecriture);
     font-weight: normal;
-
     text-align: center;
     flex: 1;
     display: flex; 
@@ -151,8 +150,7 @@ iframe{
 }
 .nav-toggler {
     position: fixed;
-    z-index: 10;
-    top: 40px;
+    top: 2rem;
     right: 30px;
     height: 50px;
     width: 50px;
@@ -168,7 +166,7 @@ iframe{
     position: absolute;
     display: block;
     width: 100%;
-    height: 6px;
+    height: 7px;
     background: var(--ecriture);
     border: 2px solid var(--background);
     transition: transform 0.5s ease-out,
@@ -181,20 +179,20 @@ iframe{
     transform: translateY(10px)
 }
 .nav-toggler.active .l1 {
-    transform: translateX(15px) rotate(90deg) scale(50%);
+    transform: translateX(15px) rotate(90deg) scale(70%);
 }
 .nav-toggler.active .l2 {
-    transform: translateX(0px)rotate(90deg) scale(50%);
+    transform: translateX(0px)rotate(90deg) scale(70%);
 }
 .nav-toggler.active .l3 {
-    transform: translateX(-15px) rotate(90deg) scale(50%);
+    transform: translateX(-15px) rotate(90deg) scale(70%);
 }
 
 nav {
     position: fixed;
     display: flex;
     width: 100vw;
-    min-height:12vh;
+    min-height:10vh;
     top: 0;
     text-align: center;
     justify-content: flex-start;
@@ -208,26 +206,34 @@ nav.active {
 }
 nav a {
     font-family: Quicksand, sans-serif;
-    padding-left:13rem;
-    padding-top: 4rem;
+    padding-left: 15rem;
+    padding-top: 3rem;
     color: #f1f1f1;
     font-size: 2rem;
     text-decoration: none;
 }
+nav a:first-child {
+    position: relative;
+    right: 10rem;
+
+  }
+nav a:nth-child(2) {
+    margin-left: 10rem;
+  }
 
 .changeTheme {
     position: relative;
-    left: 300px;
-    top: 3rem;
+    top: 2.5rem;
+    left: 20rem;
     cursor: pointer;
-    width: 20rem;
-    height: 50px;
+    width: 15rem;
+    height: 4rem;
     background: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1,5rem;
     border-radius: 10px;
     border: 1px solid #cfcfcf;
 
