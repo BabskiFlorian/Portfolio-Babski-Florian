@@ -46,7 +46,7 @@ h1 {
 }
 h2 {    
     color: var(--ecriture);
-    font-size:9rem;
+    font-size:7.5rem;
 }
 p{   
     color: var(--ecriture);
@@ -119,33 +119,8 @@ margin: 10rem;
     box-shadow: grey 0px 0px 10rem;
     
   }
-  .projet-container {
-    clear: both;
-    padding: 2rem;
-}
 
-iframe{
-    display: inline-block;
-    width: 100rem;
-    height: 70rem;
-    border-radius: 1.5rem;
 
-}
-.compteur-container,
-.code-container {
-    padding: .5rem;
-    margin: .5rem;
-    border: .3rem solid var(--ecriture);
-    border-radius: 4px;
-}
-.float-right {
-    float: right;
-    color: var(--ecriture);
-}
-.float-left {
-    float: left;
-    color: var(--ecriture);
-}
 .nav-toggler {
     position: fixed;
     top: 2rem;
@@ -187,6 +162,7 @@ iframe{
 }
 
 nav {
+    position: fixed;
     display: flex;
     align-items: center;
     width: 100vw;
