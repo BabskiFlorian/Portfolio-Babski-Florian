@@ -1,31 +1,44 @@
-const hamburgerButton = document.querySelector(".nav-toggler")
-const navigation = document.querySelector("nav")
-const switchThemeBtn = document.querySelector('.changeTheme')
-let toggleTheme = 0;
+const hamburgerButton = document.querySelector(".nav-toggler");
+const navigation = document.querySelector("nav");
+const switchThemeBtn = document.querySelector('.changeTheme');
 
-switchThemeBtn.addEventListener('click', () => {
+// Récupérer l'état du thème depuis localStorage ou définir une valeur par défaut
+let toggleTheme = localStorage.getItem('toggleTheme') === '1' ? 1 : 0;
 
-  if(toggleTheme === 0){
-
-    document.documentElement.style.setProperty('--bgcolor', '#f8f9fa');
-    document.documentElement.style.setProperty('--ecriture', '#2c2c2c');
-    document.documentElement.style.setProperty('--background', '#f1f1f1');
-    toggleTheme++;
-  } else {
+// Appliquer le thème initial en fonction de la valeur stockée
+function applyTheme() {
+  if (toggleTheme === 0) {
     document.documentElement.style.setProperty('--bgcolor', '#5e5e5e');
     document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
     document.documentElement.style.setProperty('--background', '#2c2c2c');
-    toggleTheme--;
+  } else {
+    document.documentElement.style.setProperty('--bgcolor', '#f8f9fa');
+    document.documentElement.style.setProperty('--ecriture', '#2c2c2c');
+    document.documentElement.style.setProperty('--background', '#f1f1f1');
+  }
+}
+
+// Appliquer le theme au chargement de la page
+applyTheme();
+
+switchThemeBtn.addEventListener('click', () => {
+  if (toggleTheme === 0) {
+    toggleTheme = 1;
+  } else {
+    toggleTheme = 0;
   }
 
-}
-)
+  // Stocker l'état du thème dans localStorage
+  localStorage.setItem('toggleTheme', toggleTheme.toString());
 
-hamburgerButton.addEventListener("click", toggleNav)
+  applyTheme(); // Appliquer le thème après le changement
+});
 
-function toggleNav(){
-  hamburgerButton.classList.toggle("active")
-  navigation.classList.toggle("active")
+hamburgerButton.addEventListener("click", toggleNav);
+
+function toggleNav() {
+  hamburgerButton.classList.toggle("active");
+  navigation.classList.toggle("active");
 }
 
 function getUserInfo() {
