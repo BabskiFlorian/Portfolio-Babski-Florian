@@ -30,7 +30,7 @@ switchThemeBtn.addEventListener('click', () => {
 
   // Stocker l'état du thème dans localStorage
   localStorage.setItem('toggleTheme', toggleTheme.toString());
-
+  
   applyTheme(); // Appliquer le thème après le changement
 });
 

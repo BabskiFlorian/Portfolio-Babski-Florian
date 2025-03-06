@@ -1,0 +1,51 @@
+/* styles généraux */
+body {
+    font-family: 'Lato', sans-serif; /* ou 'Quicksand', selon votre préférence */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background); /* couleur de fond claire */
+    color: var(--ecriture); /* couleur de texte foncée */
+  }
+  
+
+  
+  /* styles du tableau */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  th {
+    background-color: var(--background); /* couleur de fond foncée pour l'en-tête */
+    color: var(--ecriture);
+  }
+  
+  .tag {
+    text-transform: uppercase; /* noms de réseaux sociaux en majuscules */
+    font-weight: bold;
+  }
+  
+  .valeur {
+    font-size: 1.2em; /* valeurs (liens) légèrement plus grandes */
+  }
+  
+  /* styles des logos */
+/* styles existants */
+
+.logo {
+    margin-top: 15rem;
+    max-width: 100px; 
+    height: auto;
+    transition: transform 0.2s ease; 
+  }
+  
+  .logo:hover {
+    transform: scale(1.3); 
+  }
+  

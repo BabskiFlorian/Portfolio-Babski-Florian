@@ -23,12 +23,16 @@ body {
     flex-direction: column;
     font-family: sans-serif;
 }
-footer {
-    position: absolute;
-    font-size: 2,5rem;
+  /* styles du footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background);
+    color: var(--ecriture);
+    position: fixed;
     bottom: 0;
-    color:var(--ecriture);
-}
+    width: 100%;
+  }
 
 h1 {
     min-height:12svh;
@@ -60,16 +64,23 @@ th{
     font-size: 5rem;
 }
 
-table {
+  /* styles du tableau */
+  table {
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin: 4rem auto;
-    border-spacing: 2rem;
-    color: var(--ecriture);
   }
-  .tag{
-    text-decoration: underline;
-    font-weight: bold;
+  
+  th, td {
+    text-align: center;
+    padding: 15px;
   }
+  
+  th {
+    background-color: #333; /* couleur de fond foncée pour l'en-tête */
+    color: white;
+  }
+
   .names1 {
     width:35rem;
     height: 20rem;
@@ -95,28 +106,7 @@ table {
     align-items: center;
     border-top-right-radius: 10px;
   }
-.logo{
-margin: 10rem;
-}
-.linkedin {
-    width: 40rem; 
-    height: 40rem;
-  }
-.gmail {
-    width: 40rem; 
-    height: 40rem; 
-  }
-.github {
-    width: 40rem; 
-    height: 40rem; 
-  }
-  img:hover {
-    
-    filter: brightness(1.1);
-    transition: 0.3s;
-    box-shadow: grey 0px 0px 10rem;
-    
-  }
+
 
 
 .nav-toggler {
