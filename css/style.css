@@ -25,7 +25,7 @@ body {
 }
 footer {
     position: absolute;
-    font-size: 25px;
+    font-size: 2,5rem;
     bottom: 0;
     left: 25rem;
     color:var(--ecriture);
@@ -33,11 +33,10 @@ footer {
 
 h1 {
     min-height:12svh;
-    margin-top: 0;
+    margin-top: 7rem;
     font-size: 7.5rem;
     color: var(--ecriture);
     font-weight: normal;
-
     text-align: center;
     flex: 1;
     display: flex; 
@@ -49,7 +48,14 @@ h1 {
 
     
 }
+<<<<<<< HEAD
 
+=======
+h2 {    
+    color: var(--ecriture);
+    font-size:7.5rem;
+}
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
 p{   
     color: var(--ecriture);
 }
@@ -72,10 +78,38 @@ table {
     text-decoration: underline;
     font-weight: bold;
   }
+<<<<<<< HEAD
 
 .acceuil{
     margin-top: 5rem;
 }
+=======
+  .names1 {
+    width:35rem;
+    height: 20rem;
+    border: .3rem solid var(--ecriture);
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+  }
+  
+  .names2 {
+    width:35rem;
+    height: 20rem;
+    border: .3rem solid var(--ecriture);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .names3 { 
+    width:35rem;
+    height: 20rem;
+    border: .3rem solid var(--ecriture);
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+  }
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
 .logo{
 margin-left: 10rem;
 margin-right: 10rem;
@@ -98,17 +132,23 @@ margin-right: 10rem;
     width: 40rem; 
     height: 40rem; 
   }
+<<<<<<< HEAD
   .projet-container {
     clear: both;
     padding: 2rem;
 }
+=======
+  img:hover {
+    
+    filter: brightness(1.1);
+    transition: 0.3s;
+    box-shadow: grey 0px 0px 10rem;
+    
+  }
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
 
-iframe{
-    display: inline-block;
-    width: 100rem;
-    height: 70rem;
-    border-radius: 1.5rem;
 
+<<<<<<< HEAD
 }
 .compteur-container{
     border: .3rem solid var(--ecriture);
@@ -135,6 +175,14 @@ iframe{
     right: 3rem;
     height: 5rem;
     width: 5rem;
+=======
+.nav-toggler {
+    position: fixed;
+    top: 2rem;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
     border: none;
     outline: none;
     cursor: pointer;
@@ -147,7 +195,11 @@ iframe{
     position: absolute;
     display: block;
     width: 100%;
+<<<<<<< HEAD
     height: 0.6rem;
+=======
+    height: 7px;
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
     background: var(--ecriture);
     border: 0.2rem solid var(--background);
     transition: transform 0.5s ease-out,
@@ -160,54 +212,151 @@ iframe{
     transform: translateY(10px)
 }
 .nav-toggler.active .l1 {
-    transform: translateX(15px) rotate(90deg) scale(50%);
+    transform: translateX(15px) rotate(90deg) scale(70%);
 }
 .nav-toggler.active .l2 {
-    transform: translateX(0px)rotate(90deg) scale(50%);
+    transform: translateX(0px)rotate(90deg) scale(70%);
 }
 .nav-toggler.active .l3 {
-    transform: translateX(-15px) rotate(90deg) scale(50%);
+    transform: translateX(-15px) rotate(90deg) scale(70%);
 }
 
 nav {
     position: fixed;
     display: flex;
+    align-items: center;
     width: 100vw;
-    min-height:12vh;
+    min-height: 10vh;
     top: 0;
-    text-align: center;
-    justify-content: flex-start;
     background: #111;
     border-bottom: 0.1rem solid #cfcfcf;
     transform: translateY(-100%);
-    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);    
 }
+
 nav.active {
     transform: translate(0);
 }
+
 nav a {
     font-family: Quicksand, sans-serif;
+<<<<<<< HEAD
     padding-left:25rem;
     padding-top: 5.5rem;
+=======
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
     color: #f1f1f1;
     font-size: 2rem;
     text-decoration: none;
+    transition: filter 0.3s ease; /* Animation fluide */
+}
+nav a:hover:not(:first-child) {
+    opacity: 0.6; /* Rend l'élément légèrement transparent */
 }
 
+nav a:not(:first-child){
+    padding-left: 10rem;
+}
+nav a:first-child {
+padding-left: 5rem;
+padding-right: 20%;
+}
+
+
 .changeTheme {
+<<<<<<< HEAD
     position: relative;
     left: 30rem;
     margin-top: 4.5rem;
     cursor: pointer;
     width: 20rem;
     height: 5rem;
+=======
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centre verticalement */
+    right: 10rem;
+    cursor: pointer;
+    width: 18rem;
+    height: 4rem;
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
     background: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     font-size: 2rem;
     border-radius: 1rem;
     border: 0.1rem solid #cfcfcf;
+=======
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
 
+}
+
+section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--ecriture);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 25rem;
+    height: 2px;
+    background-color: #9a8c98;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+.about-section {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.headshot {
+    width: 35rem;
+    height: 35rem;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 37px;
+    border-radius: 50%;
+}
+
+.about-section .headshot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.about-section .headshot img:hover {
+    transform: scale(1.2);
+}
+
+.about-section .bio {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 70rem;
+    font-size: 2rem;
 }

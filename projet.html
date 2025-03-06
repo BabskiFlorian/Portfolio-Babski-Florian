@@ -7,20 +7,25 @@
     <title>Babski-Florian Portflio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
 
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/projet.css">
+>>>>>>> 3ad008f65b73851da6cce83a8d54109ea9d634fb
 
   </head>
   <body>
 
     <nav>
+      <a>Florian Babski</a>
       <a href="index.html">Acceuil</a>
-      <a href="a-propos.html">À propos</a>
       <a href="projet.html">Projet</a>
-      <a href="contact.html">Contact</a>
       <a href="cv.html">CV</a>
-      <div class="changeTheme"> Dark/Light Mode</div>
+      <a href="contact.html">Contact</a>
+      <div class="changeTheme">Mode clair/sombre</div>
     </nav>
     <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
         <span class="line l1"></span>
@@ -28,25 +33,93 @@
         <span class="line l3"></span>
     </button>
 
-    <h1> Projet</h1>
-
-    <h2>Projet 1 : Compteur incrementation et décrémentation</h2>
-    <p>Ce projet web dynamique propose un compteur interactif qui s'inspire de l'univers d'Elden Ring.</p>
-    <p>Réalisé en html, css et javascript.</p>
-    
-    <div class="projet-container">
-      <div class="compteur-container float-left">
-          <iframe src="Exemple Projet/compteur/index.html" frameborder="0"></iframe>
-          </div>
-      <div class="code-container float-right">
-        <h3>Code source (html/css/js)</h3>
-        <pre><code class="language-javascript">
-        <p>code                                                                                                                                                                                                                 
-        </p>
-        </code></pre>
+    <section class="projects-grid">
+      <!-- Projet 1 -->
+      <div class="project">
+          <img src="assets/projet/screenprojet1.png" alt="Projet 1">
+          <h2>Projet gestionnaire de ligue</h2>
+          <p>Projet Java</p>
       </div>
-  </div>
-  <footer> &copy;Babski Florian - 2025</footer>
+
+      <!-- Projet 2 -->
+      <div class="project">
+          <img src="projet2.jpg" alt="Projet 2">
+          <h2>Projet 2</h2>
+          <p>Description du projet 2.</p>
+      </div>
+
+      <div class="project">
+          <img src="projet3.jpg" alt="Projet 3">
+          <h2>Projet 3</h2>
+          <p>Description du projet 3.</p>
+      </div>
+
+      <div class="project">
+          <img src="projet3.jpg" alt="Projet 3">
+          <h2>Projet 3</h2>
+          <p>Description du projet 3.</p>
+      </div>
+      <!-- Ajoutez plus de projets ici -->
+  </section>
+    
+
+  <section class="projects-details">
+    <!-- Détails du Projet 1 -->
+    <div class="project-detail">
+        <h2>Projet 1</h2>
+        <a href="https://github.com/Georges-Lucas/personnel" target="_blank">Voir le projet</a>
+        <pre><code class="language-javascript">
+  Le projet consiste à développer une application en ligne de commande, actuellement mono-utilisateur, que nous souhaitons améliorer pour la rendre multi-utilisateurs
+  en intégrant une base de données. L'objectif principal est de permettre une gestion plus efficace des employés au sein de différentes ligues, en désignant un administrateur par ligue.
+  Cet administrateur aura pour mission de recenser et gérer les employés de sa ligue via une application bureau.
+
+  L'application propose différents niveaux d'habilitation pour les utilisateurs :
+          
+  Employé de ligue : Un employé standard peut accéder à l'application pour consulter les informations comme un annuaire, mais il ne dispose d'aucun droit d'écriture.
+          
+  Administrateur de ligue : Un employé désigné comme administrateur de sa ligue dispose de droits d'écriture. Il peut gérer la liste des employés de sa propre ligue via une application bureau.
+          
+  Super-administrateur : Ce niveau d'utilisateur a un accès en écriture à tous les employés de toutes les ligues. Il peut gérer les comptes des administrateurs via une application en ligne de commande.
+        </code></pre>
+    </div>
+
+    <!-- Détails du Projet 2 -->
+    <div class="project-detail">
+        <h2>Projet 2</h2>
+        <a href="lien-du-projet-2" target="_blank">Voir le projet</a>
+        <pre><code class="language-javascript">
+// Exemple de code pour le projet 2
+function exempleCode() {
+console.log("Ceci est un exemple de code pour le projet 2");
+}
+        </code></pre>
+    </div>
+
+    <div class="project-detail">
+        <h2>Projet 1</h2>
+        <a href="lien-du-projet-1" target="_blank">Voir le projet</a>
+        <pre><code class="language-javascript">
+// Exemple de code pour le projet 1
+function exempleCode() {
+console.log("Ceci est un exemple de code pour le projet 1");
+}
+        </code></pre>
+    </div>
+
+    <!-- Détails du Projet 2 -->
+    <div class="project-detail">
+        <h2>Projet 2</h2>
+        <a href="lien-du-projet-2" target="_blank">Voir le projet</a>
+        <pre><code class="language-javascript">
+// Exemple de code pour le projet 2
+function exempleCode() {
+console.log("Ceci est un exemple de code pour le projet 2");
+}
+        </code></pre>
+    </div>
+    <!-- Ajoutez plus de détails de projets ici -->
+</section>
+  <footer> &copy;2025 Babski Florian.</footer>
   <script src="js/script.js"></script>
 </body>
 </html>
