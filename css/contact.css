@@ -1,8 +1,6 @@
 /* styles généraux */
 body {
     font-family: 'Lato', sans-serif; /* ou 'Quicksand', selon votre préférence */
-    margin: 0;
-    padding: 0;
     background-color: var(--background); /* couleur de fond claire */
     color: var(--ecriture); /* couleur de texte foncée */
   }
@@ -11,7 +9,7 @@ body {
   
   /* styles du tableau */
   table {
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
     border-collapse: collapse;
   }
@@ -39,7 +37,6 @@ body {
 /* styles existants */
 
 .logo {
-    margin-top: 15rem;
     max-width: 100px; 
     height: auto;
     transition: transform 0.2s ease; 
