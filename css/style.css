@@ -154,7 +154,7 @@ nav {
     width: 100vw;
     min-height: 10vh;
     top: 0;
-    background: #111;
+    background: black;
     border-bottom: 1px solid #cfcfcf;
     transform: translateY(-100%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);    
@@ -168,7 +168,7 @@ nav a {
     font-family: Quicksand, sans-serif;
     color: #f1f1f1;
     font-size: 2rem;
-    text-decoration: none;
+    text-align: center;
     transition: filter 0.3s ease; /* Animation fluide */
 }
 nav a:hover:not(:first-child) {
@@ -176,7 +176,7 @@ nav a:hover:not(:first-child) {
 }
 
 nav a:not(:first-child){
-    padding-left: 10rem;
+    padding-left: 14rem;
 }
 nav a:first-child {
 padding-left: 5rem;
