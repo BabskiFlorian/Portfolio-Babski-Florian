@@ -1,7 +1,20 @@
 img {
     height: 75rem;
     margin-top: 10rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     max-width: 100%;
     border: solid 1px black;
 }
+
+a.download-button {
+    background-color: #4A4E69; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Bords arrondis */
+    margin-bottom: 2rem;
+  }
+  
+  a.download-button:hover {
+    background-color: #22223b; /* Couleur de fond au survol */
+  }
