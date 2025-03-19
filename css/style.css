@@ -266,3 +266,132 @@ section h2::after {
     max-width: 70rem;
     font-size: 2rem;
 }
+
+/* Media Queries */
+
+/* Styles pour les téléphones (petits écrans) */
+@media (max-width: 767px) {
+    body {
+        padding-top: 0; /* Remove padding for fixed nav */
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding-top: 2rem; /* Adjust padding */
+        padding-bottom: 1rem; /* Adjust padding */
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    embed {
+        height: 30rem;
+    }
+
+    th {
+        font-size: 1.5rem;
+    }
+
+    .names1,
+    .names2,
+    .names3 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    nav {
+        position: relative; /* No longer fixed */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+        width: 100%; /* Full width */
+        min-height: auto; /* Adjust height automatically */
+        transform: translateY(0); /* Remove slide-up */
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    nav.active {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    nav a {
+        display: block; /* Show links */
+        padding: 0.5rem; /* Adjust padding */
+        width: 100%;
+        padding-left: 0;
+    }
+
+    nav a:not(:first-child) {
+        padding-left: 0; /* Remove padding */
+    }
+
+    nav a:first-child {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav-toggler {
+        display: none; /* Hide hamburger menu */
+    }
+
+    .changeTheme {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        right: 0;
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .headshot {
+        width: 90%;
+        max-width: 30rem;
+        height: auto;
+    }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 5rem;
+        padding-top: 7rem;
+        padding-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    embed {
+        height: 35rem;
+    }
+
+    th {
+        font-size: 1.8rem;
+    }
+
+    .changeTheme {
+        right: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 3.5rem;
+    }
+
+    .headshot {
+        width: 90%;
+        max-width: 30rem;
+        height: auto;
+    }
+}
