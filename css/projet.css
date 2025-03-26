@@ -1,5 +1,7 @@
 @import url(reset.css);
-
+html {
+    scroll-behavior: smooth;
+  }
 :root {
     --ecriture: #f1f1f1;
     --background: #2c2c2c;
@@ -142,11 +144,16 @@ header {
 }
 
 .project-detail {
-    background-color:var(--background);
+    background-color: var(--background);
     border: 1px solid black;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px auto; /* Changed margin to center horizontally */
     padding: 20px;
+    max-width: 150rem; /* Set a maximum width */
+    width: 90%; /* Set a width relative to the parent */
+    min-height: 200px; /* Set a minimum height */
+    box-sizing: border-box; /* Include padding and border in the width */
+    
 }
 
 .project-detail h2 {
@@ -164,14 +171,64 @@ header {
     text-decoration: underline;
 }
 
-pre {
+ section p{
     background-color: var(--bgcolor);
     color: var(--ecriture);
     padding: 10px;
     border-radius: 5px;
-    overflow-x: auto;
+    overflow-x: hidden; /* Hide horizontal overflow */
+
 }
 
 code {
     font-family: Consolas, "Courier New", monospace;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background);
+    color: var(--ecriture);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 2px #9a8c98;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.bouton-haut {
+    position: fixed; /* Position fixe par rapport à la fenêtre du navigateur */
+    bottom: 7.5rem; /* Distance depuis le bas */
+    right: 20px; /* Distance depuis la droite */
+    z-index: 999; /* Assure que l'image est au-dessus des autres éléments */
+    background-color: #4A4E69;
+    border-radius: 50%; /* Rend l'image ronde (facultatif) */
+    transform: rotate(180deg);
+    border: solid 1.5px white;
+
+  }
+  
+  .bouton-haut img {
+    width: 4rem; /* Ajustez la taille de l'image selon vos besoins */
+    height: 3.25rem;
+    transform: scale(0.7); /* 1.2 = 120% */
+    padding-top: 1rem;
+
+
+  }
+  img{
+  }

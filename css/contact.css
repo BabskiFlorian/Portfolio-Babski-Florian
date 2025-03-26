@@ -5,11 +5,13 @@ body {
     color: var(--ecriture); /* couleur de texte foncée */
   }
   
-
+h1{
+  padding-bottom: 25rem;
+}
   
   /* styles du tableau */
   table {
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
   }
@@ -30,14 +32,14 @@ body {
   }
   
   .valeur {
-    font-size: 1.2em; /* valeurs (liens) légèrement plus grandes */
+    font-size: 34px; /* valeurs (liens) légèrement plus grandes */
   }
   
   /* styles des logos */
 /* styles existants */
 
 .logo {
-    max-width: 100px; 
+    max-width: 150px; 
     height: auto;
     transition: transform 0.2s ease; 
   }
