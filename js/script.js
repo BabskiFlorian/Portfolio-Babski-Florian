@@ -50,3 +50,23 @@ function getUserInfo() {
     })
 }
 getUserInfo();
+
+
+
+
+const element = document.getElementById('elementARotate');
+let isRotatingLeft = false;
+
+function rotate() {
+  if (isRotatingLeft) {
+    element.classList.remove('rotate-left');
+    element.classList.add('rotate-right');
+  } else {
+    element.classList.remove('rotate-right');
+    element.classList.add('rotate-left');
+  }
+  isRotatingLeft = !isRotatingLeft;
+}
+
+// Démarrer l'animation (par exemple, toutes les 4 secondes)
+setInterval(rotate, 1000);
