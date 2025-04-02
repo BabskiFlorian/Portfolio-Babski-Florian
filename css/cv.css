@@ -6,6 +6,12 @@ img {
     border: solid 1px black;
 }
 
+.download-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
 a.download-button {
     background-color: #4A4E69; /* Couleur de fond */
     color: white; /* Couleur du texte */
@@ -13,11 +19,15 @@ a.download-button {
     text-decoration: none; /* Supprime le soulignement */
     border-radius: 5px; /* Bords arrondis */
     margin-bottom: 2rem;
+
   }
   
+
   a.download-button:hover {
     background-color: #22223b; /* Couleur de fond au survol */
   }
 
-
-
+  main{
+    display: flex;
+    justify-content: center;
+  }
