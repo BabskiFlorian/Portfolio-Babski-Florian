@@ -129,3 +129,11 @@ footer {
     transform: scale(0.7); /* 1.2 = 120% */
     padding-top: 1rem;
   }
+
+  .projets{
+    font-size: 44px;
+    display: inline-block;
+    animation: vague 0.7s infinite alternate;
+    background-color: transparent;
+    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
+}

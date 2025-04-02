@@ -28,6 +28,15 @@ a.download-button {
   }
 
   main{
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
   }
+
+  .cv{
+    font-size: 44px;
+    display: inline-block;
+    animation: vague 0.7s infinite alternate;
+    background-color: transparent;
+    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
+}

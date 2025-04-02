@@ -99,7 +99,7 @@ th{
     border-top-right-radius: 10px;
   }
 
-  header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -171,6 +171,9 @@ nav {
 nav.active {
     transform: translate(0);
 }
+nav.loading { /* Nouvelle classe pour désactiver temporairement la transition */
+    transition: none !important;
+}
 
 nav a {
     font-family: Quicksand, sans-serif;
@@ -184,9 +187,6 @@ nav a:hover:not(:first-child) {
     opacity: 0.6;
 }
 
-nav a:first-child {
-    /* Pas besoin de margin-right: auto ici si justify-content est space-between */
-}
 
 nav a:not(:first-child) {
     /* Conserve la marge à gauche pour l'espacement entre les liens */
@@ -208,9 +208,7 @@ nav a:not(:first-child) {
     margin-right: 14rem;
 }
 
-nav.active .changeTheme {
-    /* Tu peux ajuster la position du changeTheme dans le menu actif si nécessaire */
-}
+
 
 section h2 {
     font-size: 3rem;
@@ -275,6 +273,14 @@ section h2::after {
     max-width: 70rem;
     font-size: 2rem;
 }
+.index{
+    font-size: 44px;
+    display: inline-block;
+    animation: vague 0.7s infinite alternate;
+    background-color: transparent;
+    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
+}
+
 
 /* Media Queries */
 
@@ -404,3 +410,12 @@ section h2::after {
         height: auto;
     }
 }
+
+@keyframes vague {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
