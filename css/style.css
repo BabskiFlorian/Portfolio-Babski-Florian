@@ -290,6 +290,7 @@ section h2::after {
         padding-top: 0; /* Remove padding for fixed nav */
     }
 
+
     h1 {
         font-size: 3rem;
         padding-top: 2rem; /* Adjust padding */
@@ -318,8 +319,8 @@ section h2::after {
     nav {
         position: relative; /* No longer fixed */
         flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center links */
         width: 100%; /* Full width */
+        justify-content: center;
         min-height: auto; /* Adjust height automatically */
         transform: translateY(0); /* Remove slide-up */
         padding: 1rem;
