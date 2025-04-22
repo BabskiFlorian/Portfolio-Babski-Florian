@@ -18,8 +18,7 @@ a.download-button {
     padding: 10px 20px; /* Espacement intérieur */
     text-decoration: none; /* Supprime le soulignement */
     border-radius: 5px; /* Bords arrondis */
-    margin-bottom: 2rem;
-
+    margin-bottom: 5rem;
   }
   
 
@@ -34,9 +33,10 @@ a.download-button {
   }
 
   .cv{
-    font-size: 44px;
+    font-size: 32px;
     display: inline-block;
     animation: vague 0.7s infinite alternate;
     background-color: transparent;
     text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
+
 }

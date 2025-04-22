@@ -178,7 +178,7 @@ nav.loading { /* Nouvelle classe pour désactiver temporairement la transition *
 nav a {
     font-family: Quicksand, sans-serif;
     color: #f1f1f1;
-    font-size: 26px;
+    font-size: 20px;
     text-decoration: none;
     transition: filter 0.3s ease;
 }
@@ -193,9 +193,13 @@ nav a:not(:first-child) {
     margin-left: 2rem;
 }
 
+nav a:is(:first-child){
+    color: #F2E9E4;
+}
+
 .changeTheme {
     cursor: pointer;
-    width: 18rem;
+    width: 15rem;
     height: 4rem;
     background: black;
     color: white;
@@ -205,7 +209,7 @@ nav a:not(:first-child) {
     font-size: 1.5rem;
     border-radius: 4px;
     border: 1px solid white;
-    margin-right: 14rem;
+    margin-right: 6rem;
 }
 
 
@@ -346,9 +350,10 @@ section h2::after {
         padding-left: 0; /* Remove padding */
     }
 
-    nav a:first-child {
+    nav a:is(:first-child) {
         padding-left: 0;
         padding-right: 0;
+        color: #F2E9E4;
     }
 
     .nav-toggler {
