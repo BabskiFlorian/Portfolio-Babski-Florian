@@ -178,7 +178,7 @@ nav.loading {
 nav a {
     font-family: Quicksand, sans-serif;
     color: #f1f1f1;
-    font-size: 26px;
+    font-size: 20px;
     text-decoration: none;
     transition: filter 0.3s ease;
 }
@@ -193,9 +193,13 @@ nav a:not(:first-child) {
     margin-left: 2rem;
 }
 
+nav a:is(:first-child){
+    color: #F2E9E4;
+}
+
 .changeTheme {
     cursor: pointer;
-    width: 18rem;
+    width: 15rem;
     height: 4rem;
     background: black;
     color: white;
@@ -205,7 +209,7 @@ nav a:not(:first-child) {
     font-size: 1.5rem;
     border-radius: 4px;
     border: 1px solid white;
-    margin-right: 14rem;
+    margin-right: 6rem;
 }
 
 
@@ -290,6 +294,7 @@ section h2::after {
         padding-top: 0; /* Remove padding for fixed nav */
     }
 
+
     h1 {
         font-size: 3rem;
         padding-top: 2rem; /* Adjust padding */
@@ -318,8 +323,8 @@ section h2::after {
     nav {
         position: relative; /* No longer fixed */
         flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center links */
         width: 100%; /* Full width */
+        justify-content: center;
         min-height: auto; /* Adjust height automatically */
         transform: translateY(0); /* Remove slide-up */
         padding: 1rem;
@@ -345,9 +350,10 @@ section h2::after {
         padding-left: 0; /* Remove padding */
     }
 
-    nav a:first-child {
+    nav a:is(:first-child) {
         padding-left: 0;
         padding-right: 0;
+        color: #F2E9E4;
     }
 
     .nav-toggler {

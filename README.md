@@ -17,6 +17,7 @@ Le portfolio est structuré en quatre sections principales :
 * **Projets :** Une vitrine de mes réalisations, avec des descriptions détaillées et des liens vers les projets en ligne ou les dépôts GitHub.
 * **CV :** Mon curriculum vitae à jour, disponible en téléchargement.
 * **Contact :** Mes coordonnées et un formulaire de contact pour me joindre facilement.
+* **Veille Technologique :** La veille technlogique que j'ai choisi est l "Génération de code assistée par IA" des recherches ont été réalisées afin de développer ce sujet.
 
 ## Technologies Utilisées
 
@@ -28,4 +29,4 @@ Le portfolio est structuré en quatre sections principales :
 * **Projets :** Explorez la section "Projets" pour découvrir mes réalisations et les technologies que j'ai utilisées.
 * **CV :** Téléchargez mon CV pour un aperçu détaillé de mon expérience et de mes compétences.
 * **Contact :** N'hésitez pas à me contacter via le formulaire ou les liens fournis si vous avez des questions ou des opportunités à me proposer.
-
+* **Veille Technologique :** La veille technlogique que j'ai choisi est l "Génération de code assistée par IA" des recherches ont été réalisées afin de développer ce sujet.
