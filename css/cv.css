@@ -1,9 +1,12 @@
 img {
-    height: 75rem;
-    margin-top: 10rem;
-    margin-bottom: 1rem;
-    max-width: 100%;
-    border: solid 1px black;
+  height: 70vh; /* Utilisation de vh (viewport height) au lieu de % */
+  max-height: 100rem; /* Limite maximale pour les grands écrans */
+  width: auto; /* Permet à l'image de garder ses proportions */
+  margin-top: 10vh; /* Relatif à la hauteur de l'écran */
+  margin-bottom: 1rem;
+  max-width: 100%; /* Empêche l'image de dépasser son conteneur */
+  border: solid 1px black;
+  object-fit: contain; /* Garde les proportions de l'image */
 }
 
 .download-container {
