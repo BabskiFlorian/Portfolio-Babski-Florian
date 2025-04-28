@@ -8,7 +8,7 @@ let toggleTheme = localStorage.getItem('toggleTheme') === '1' ? 1 : 0;
 // Appliquer le thème initial en fonction de la valeur stockée
 function applyTheme() {
     if (toggleTheme === 0) {
-        document.documentElement.style.setProperty('--bgcolor', '#5e5e5e');
+        document.documentElement.style.setProperty('--bgcolor', '#343434');
         document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
         document.documentElement.style.setProperty('--background', '#2c2c2c');
     } else {

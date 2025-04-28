@@ -126,9 +126,8 @@ header {
     position: absolute;
     display: block;
     width: 100%;
-    height: 7px;
-    background: var(--ecriture);
-    border: 2px solid var(--background);
+    height: 5px;
+    background: #9a8c98;
     transition: transform 0.5s ease-out, opacity 0.1s ease-out;
 }
 
@@ -177,15 +176,12 @@ nav.loading {
 
 nav a {
     font-family: Quicksand, sans-serif;
-    color: #f1f1f1;
+    color: white;
     font-size: 20px;
     text-decoration: none;
     transition: filter 0.3s ease;
 }
 
-nav a:hover:not(:first-child) {
-    opacity: 0.6;
-}
 
 
 nav a:not(:first-child) {
@@ -193,9 +189,7 @@ nav a:not(:first-child) {
     margin-left: 2rem;
 }
 
-nav a:is(:first-child){
-    color: #F2E9E4;
-}
+
 
 .changeTheme {
     cursor: pointer;
@@ -290,38 +284,75 @@ section h2::after {
 
 /* Styles pour les téléphones (petits écrans) */
 @media (max-width: 767px) {
+ /* Style par défaut (desktop) */
+header {
+    position: relative;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .nav-toggler {
+    display: none; /* Caché sur desktop */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1000;
+  }
+  
+  .nav-toggler .line {
+    display: block;
+    border: none;
+    width: 25px;
+    height: 3px;
+    background: #9a8c98;
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  @media (max-width: 767px) {
     body {
+<<<<<<< HEAD
         margin-top: 24rem; /* Remove padding for fixed nav */
         margin-bottom: 5rem; /* Remove padding for fixed nav */
 
         
+=======
+      margin-bottom: 5rem;
+>>>>>>> c365c843ce58d4e0f3dd9b7f5e583f4dfd205704
     }
-
-
+    
     h1 {
-        font-size: 3rem;
-        padding-top: 2rem; /* Adjust padding */
-        padding-bottom: 1rem; /* Adjust padding */
+      font-size: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
     }
-
+    
     h2 {
-        font-size: 3rem;
+      font-size: 3rem;
     }
-
+    
     embed {
-        height: 30rem;
+      height: 30rem;
     }
-
+    
     th {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+    
     .names1,
     .names2,
     .names3 {
-        width: 100%;
-        border-radius: 0;
+      width: 100%;
+      border-radius: 0;
     }
+<<<<<<< HEAD
 
     nav {
         position: relative; /* No longer fixed */
@@ -364,9 +395,17 @@ section h2::after {
         text-align: center; /* Centre le premier lien aussi */
       }
 
+=======
+    
+    /* Menu hamburger */
+>>>>>>> c365c843ce58d4e0f3dd9b7f5e583f4dfd205704
     .nav-toggler {
-        display: none; /* Hide hamburger menu */
+      display: block; /* Affiché sur mobile */
+      position: fixed;
+      top: 15px;
+      right: 15px;
     }
+<<<<<<< HEAD
 
     .changeTheme {
         position: relative;
@@ -378,17 +417,57 @@ section h2::after {
         font-size: 0.8rem;
         margin-top: 1rem;
         text-align: center; /* Centre le texte horizontalement */
+=======
+    
+    nav {
+      position: fixed;
+      top: 0;
+      left: -100%; /* Hors écran par défaut */
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--background); /* Adaptez à votre couleur */
+      transition: left 0.3s ease;
+      z-index: 900;
+>>>>>>> c365c843ce58d4e0f3dd9b7f5e583f4dfd205704
     }
-
-    .about-section h2 {
-        font-size: 2.5rem;
+    nav a {
+        color: var(--ecriture);
     }
-
+    /* Quand le menu est actif */
+    nav.active {
+      left: 0; /* Visible à l'écran */
+    }
+    
+    
+    nav a {
+      display: block;
+      padding: 0.5rem;
+      width: 100%;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    
+    nav a:not(:first-child) {
+      padding-left: 0;
+    }
+    
+    nav a:is(:first-child) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
     .headshot {
-        width: 90%;
-        max-width: 30rem;
-        height: auto;
+      width: 90%;
+      max-width: 30rem;
+      height: auto;
     }
+    
+    .changeTheme {
+      margin-top: 1rem;
+    }
+  }
 }
 
 /* Styles pour les tablettes */
