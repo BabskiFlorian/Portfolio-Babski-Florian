@@ -139,70 +139,6 @@ th, td {
     margin-bottom: 2rem;
   }
   
-<<<<<<< HEAD
-  .contact{
-    font-size: 32px;
-    display: inline-block;
-    animation: vague 0.7s infinite alternate;
-    background-color: transparent;
-    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
-}
-
-/* Styles pour les écrans plus petits (jusqu'à 600px de largeur par exemple) */
-@media (max-width: 600px) {
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block; /* Tous les éléments deviennent des blocs */
-    width: 100%; /* Prennent toute la largeur */
-  }
-
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  tr {
-    margin-bottom: 1em;
-  }
-
-  td {
-    border: none;
-    position: relative;
-    padding-left: 0; /* Supprime le padding à gauche pour le pseudo-élément */
-    text-align: center; /* Centre le texte principal */
-    padding-top: 2em; /* Ajoute de l'espace pour le pseudo-élément */
-  }
-
-  td:before {
-    position: absolute;
-    top: 0.5em;
-    left: 0.5em;
-    width: auto; /* Ajuste la largeur automatiquement */
-    padding-right: 0.5em;
-    white-space: nowrap;
-    font-weight: bold;
-    content: attr(data-column); /* Récupère le nom de la colonne */
-  }
-
-  .logo {
-    max-width: 80px; /* Taille des logos */
-    margin: 10px auto; /* Centre les logos */
-    display: block; /* Assure le centrage */
-  }
-
-  .valeur,
-  .tag {
-    text-align: center; /* Centre le texte */
-    display: block; /* Assure que chaque élément prend sa propre ligne */
-    width: 100%; /* Prend toute la largeur de la cellule */
-    font-size: 2.6rem;
-  }
-=======
   .logo {
     max-width: 100px;
   }
@@ -219,5 +155,4 @@ th, td {
   background-color: transparent;
   text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
 
->>>>>>> c365c843ce58d4e0f3dd9b7f5e583f4dfd205704
 }
