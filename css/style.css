@@ -291,7 +291,10 @@ section h2::after {
 /* Styles pour les téléphones (petits écrans) */
 @media (max-width: 767px) {
     body {
-        padding-top: 0; /* Remove padding for fixed nav */
+        margin-top: 24rem; /* Remove padding for fixed nav */
+        margin-bottom: 5rem; /* Remove padding for fixed nav */
+
+        
     }
 
 
@@ -324,37 +327,42 @@ section h2::after {
         position: relative; /* No longer fixed */
         flex-direction: column; /* Stack links vertically */
         width: 100%; /* Full width */
-        justify-content: center;
+        justify-content: center; /* Aligne les éléments verticalement au centre (pas ce qu'on veut ici pour le texte) */
+        align-items: center; /* Centre les éléments horizontalement */
         min-height: auto; /* Adjust height automatically */
         transform: translateY(0); /* Remove slide-up */
         padding: 1rem;
         margin-bottom: 1rem;
-    }
-
-    nav.active {
+        text-align: center; /* Centre le texte à l'intérieur de la nav */
+      }
+    
+      nav.active {
         position: relative;
         left: 0;
         width: 100%;
-        height: auto;
+        height: 21em;
         padding: 1rem;
-    }
-
-    nav a {
+        text-align: center; /* Centre le texte à l'intérieur de la nav active */
+      }
+    
+      nav a {
         display: block; /* Show links */
         padding: 0.5rem; /* Adjust padding */
         width: 100%;
         padding-left: 0;
-    }
-
-    nav a:not(:first-child) {
+        text-align: center; /* Centre le texte de chaque lien */
+      }
+    
+      nav a:not(:first-child) {
         padding-left: 0; /* Remove padding */
-    }
-
-    nav a:is(:first-child) {
+      }
+    
+      nav a:is(:first-child) {
         padding-left: 0;
         padding-right: 0;
         color: #F2E9E4;
-    }
+        text-align: center; /* Centre le premier lien aussi */
+      }
 
     .nav-toggler {
         display: none; /* Hide hamburger menu */
@@ -365,10 +373,11 @@ section h2::after {
         top: 0;
         transform: translateY(0);
         right: 0;
-        width: 8rem;
+        width: 10rem;
         height: 2.5rem;
         font-size: 0.8rem;
         margin-top: 1rem;
+        text-align: center; /* Centre le texte horizontalement */
     }
 
     .about-section h2 {
