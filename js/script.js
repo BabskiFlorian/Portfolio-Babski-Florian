@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         track.style.width = `${totalWidth + totalGap}px`;
 
         // Met à jour la clé d'animation en fonction de la nouvelle largeur
-        const animationDuration = 20; // Durée de base
+        const animationDuration = 6; // Durée de base
         const durationAdjusted = animationDuration * (track.offsetWidth / 500); // Ajuste la vitesse
         const animationKeyframes = `@keyframes scroll {
             from { transform: translateX(0); }
