@@ -78,8 +78,7 @@ color: var(--ecriture);
             background-color: var(--bgcolor);
 
         }
-        .resour{
-        }
+
 
         .resource-card p, .tag, .resource-date, h3 {
             color: var(--ecriture);

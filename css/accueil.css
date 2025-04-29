@@ -1,0 +1,71 @@
+
+h2 {
+    text-align: center; /* Centre le titre "Mes compétences" */
+    color: var(--ecriture);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--ecriture);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Styles pour la section compétences (peut-être dans accueil.css) */
+.skills-container {
+    width: 90%; /* Prend 90% de la largeur pour ne pas toucher les bords */
+    max-width: 900px; /* Limite la largeur maximale sur les grands écrans */
+    margin: 2rem auto; /* Centre horizontalement et ajoute une marge verticale */
+    background: var(--ecriture); /* Fond blanc pour la section */
+    border-radius: 10px; /* Bords légèrement arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    padding: 1.5rem; /* Ajoute un peu d'espace intérieur */
+    overflow: hidden; /* Important pour masquer le défilement qui dépasse */
+    margin-bottom: 10rem;
+}
+
+.skills-track {
+    display: flex;
+    animation: scroll 20s linear infinite; /* Laisse l'animation infinie */
+    width: max-content;
+    padding: 1rem 0;
+    gap: 8rem; /* Augmente l'espace entre les éléments à 4rem */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre verticalement le logo et le nom */
+    min-width: 8rem; /* Largeur minimale pour chaque élément */
+}
+
+.skill-logo {
+    background: var(--background); /* Fond gris clair pour les logos */
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Ombre légère pour les logos */
+    margin-bottom: 0.5rem;
+}
+
+.skill-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Assure que l'image s'adapte à l'intérieur du cercle */
+    border-radius: 50%;
+}
+
+.skill-name {
+    color: var(--background);
+    font-weight: 500; /* Police un peu moins grasse */
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - 2rem * 6)); } /* Défile de toute la largeur + les gaps */
+}
