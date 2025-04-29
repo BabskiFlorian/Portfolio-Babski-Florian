@@ -26,6 +26,7 @@ color: var(--ecriture);
             font-weight: 800;
             margin-top: 5rem;
             text-align: center;
+            text-decoration: underline 0.3rem;
 
         }
         

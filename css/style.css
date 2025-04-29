@@ -216,17 +216,6 @@ section h2 {
     position: relative;
 }
 
-section h2::after {
-    content: '';
-    position: absolute;
-    width: 25rem;
-    height: 2px;
-    background-color: #9a8c98;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 4px;
-}
 
 .about-section {
     flex-direction: column;
@@ -241,7 +230,8 @@ section h2::after {
 .about-section h2 {
     margin-bottom: 1rem;
     font-size: 4rem;
-}
+    text-decoration: underline 0.3rem;
+  }
 
 .headshot {
     width: 35rem;
@@ -267,7 +257,7 @@ section h2::after {
 .about-section .bio {
     margin-bottom: 2rem;
     padding: 0 2rem;
-    max-width: 70rem;
+    max-width: 100rem;
     font-size: 2rem;
 }
 .index{
