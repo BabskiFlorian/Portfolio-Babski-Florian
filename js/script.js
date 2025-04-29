@@ -2,10 +2,10 @@ const hamburgerButton = document.querySelector(".nav-toggler");
 const navigation = document.querySelector("nav");
 const switchThemeBtn = document.querySelector('.changeTheme');
 
-// Récupérer l'état du thème depuis localStorage ou définir une valeur par défaut
+ //localstorage pour garder la couleur en fonction de l'état du bouton noir/blanc
 let toggleTheme = localStorage.getItem('toggleTheme') === '1' ? 1 : 0;
 
-// Appliquer le thème initial en fonction de la valeur stockée
+// 
 function applyTheme() {
     if (toggleTheme === 0) {
         document.documentElement.style.setProperty('--bgcolor', '#343434');
@@ -18,7 +18,6 @@ function applyTheme() {
     }
 }
 
-// Appliquer le theme au chargement de la page
 applyTheme();
 
 switchThemeBtn.addEventListener('click', () => {
@@ -28,24 +27,25 @@ switchThemeBtn.addEventListener('click', () => {
         toggleTheme = 0;
     }
 
-    // Stocker l'état du thème dans localStorage
+ //localstorage pour garder la couleur en fonction de l'état du bouton noir/blanc
+
     localStorage.setItem('toggleTheme', toggleTheme.toString());
 
-    applyTheme(); // Appliquer le thème après le changement
+    applyTheme();
 });
 
 hamburgerButton.addEventListener("click", toggleNav);
 
+//localstorage pour garder ou non le header en fonction de la page
+
 function toggleNav() {
     hamburgerButton.classList.toggle("active");
     navigation.classList.toggle("active");
-    // Enregistrer l'état de la navigation dans localStorage
     localStorage.setItem('navActive', navigation.classList.contains('active') ? 'true' : 'false');
 }
 
-// Récupérer l'état de la navigation au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
-    navigation.classList.add('loading'); // Ajouter la classe 'loading' pour désactiver la transition
+    navigation.classList.add('loading');
 
     const isNavActive = localStorage.getItem('navActive');
     if (isNavActive === 'true') {
@@ -56,10 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburgerButton.classList.remove('active');
     }
 
-    // Forcer un reflow (layout) pour que la classe 'loading' soit prise en compte
     void navigation.offsetWidth;
 
-    navigation.classList.remove('loading'); // Supprimer la classe 'loading' après le chargement
+    navigation.classList.remove('loading');
 });
 
 function getUserInfo() {
@@ -73,34 +72,55 @@ function getUserInfo() {
 getUserInfo();
 
 
-const element = document.getElementById('elementARotate');
-let isRotatingLeft = false;
+//annimation header
 
-function rotate() {
-    if (isRotatingLeft) {
-        element.classList.remove('rotate-left');
-        element.classList.add('rotate-right');
-    } else {
-        element.classList.remove('rotate-right');
-        element.classList.add('rotate-left');
-    }
-    isRotatingLeft = !isRotatingLeft;
-}
-
-// Démarrer l'animation (par exemple, toutes les 4 secondes)
-setInterval(rotate, 1000);
-
-//annimation header mot
-
-const motElement = document.getElementById('annimationheader'); // Supposons que votre mot ait cet ID
+const motElement = document.getElementById('annimationheader'); 
 const mot = motElement.textContent;
-motElement.textContent = ''; // Effacer le contenu initial
+motElement.textContent = '';
 
 for (let i = 0; i < mot.length; i++) {
     const span = document.createElement('span');
     span.textContent = mot[i];
-    span.style.animationDelay = i * 0.1 + 's'; // Calculer le délai dynamiquement
+    span.style.animationDelay = i * 0.1 + 's';
     motElement.appendChild(span);
 }
 
-//LocalStorage Header (Correction du commentaire, il s'agit du Nav)
+//compétences accueil
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.skills-track');
+    const items = document.querySelectorAll('.skill-item');
+    const itemCount = items.length;
+
+    function setupInfiniteScroll() {
+        // Clone tous les éléments de compétence
+        const clones = Array.from(items).map(item => item.cloneNode(true));
+
+        // Ajoute les clones à la fin du track
+        clones.forEach(clone => track.appendChild(clone));
+
+        // Recalcule la largeur totale du track
+        const totalWidth = Array.from(track.children).reduce((acc, curr) => acc + curr.offsetWidth, 0);
+        const gapWidth = parseFloat(window.getComputedStyle(track).gap) || 0;
+        const totalGap = (track.children.length - 1) * gapWidth;
+        track.style.width = `${totalWidth + totalGap}px`;
+
+        // Met à jour la clé d'animation en fonction de la nouvelle largeur
+        const animationDuration = 6; // Durée de base
+        const durationAdjusted = animationDuration * (track.offsetWidth / 500); // Ajuste la vitesse
+        const animationKeyframes = `@keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-${track.offsetWidth / 2}px); } /* Défile de la moitié pour la boucle */
+        }`;
+
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = animationKeyframes;
+        document.head.appendChild(styleSheet);
+
+        track.style.animationDuration = `${durationAdjusted}s`;
+    }
+
+    setupInfiniteScroll();
+    window.addEventListener('resize', setupInfiniteScroll);
+});

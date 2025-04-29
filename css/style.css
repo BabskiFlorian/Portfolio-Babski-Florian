@@ -170,7 +170,7 @@ nav {
 nav.active {
     transform: translate(0);
 }
-nav.loading { /* Nouvelle classe pour désactiver temporairement la transition */
+nav.loading {
     transition: none !important;
 }
 
@@ -213,7 +213,6 @@ section h2 {
     font-weight: 700;
     color: var(--ecriture);
     margin-bottom: 1rem;
-    letter-spacing: 1px;
     position: relative;
 }
 
