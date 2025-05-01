@@ -1,45 +1,43 @@
 img {
-  height: 70vh; /* Utilisation de vh (viewport height) au lieu de % */
-  max-height: 100rem; /* Limite maximale pour les grands écrans */
-  width: auto; /* Permet à l'image de garder ses proportions */
-  margin-top: 10vh; /* Relatif à la hauteur de l'écran */
+  height: 70vh;
+  max-height: 100rem;
+  width: auto;
+  margin-top: 10vh;
   margin-bottom: 1rem;
-  max-width: 100%; /* Empêche l'image de dépasser son conteneur */
+  max-width: 100%;
   border: solid 1px black;
-  object-fit: contain; /* Garde les proportions de l'image */
+  object-fit: contain;
 }
 
 .download-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
 }
 
 a.download-button {
-    background-color: #4A4E69; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement intérieur */
-    text-decoration: none; /* Supprime le soulignement */
-    border-radius: 5px; /* Bords arrondis */
-    margin-bottom: 5rem;
-  }
-  
+  background-color: #4A4E69;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+}
 
-  a.download-button:hover {
-    background-color: #22223b; /* Couleur de fond au survol */
-  }
+a.download-button:hover {
+  background-color: #22223b;
+}
 
-  main{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-  }
+main{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
-  .cv{
-    font-size: 32px;
-    display: inline-block;
-    animation: vague 0.7s infinite alternate;
-    background-color: transparent;
-    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
-
+.cv{
+  font-size: 32px;
+  display: inline-block;
+  animation: vague 0.7s infinite alternate;
+  background-color: transparent;
+  text-shadow: 4px 4px 10px rgb(255, 255, 255);
 }

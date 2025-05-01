@@ -1,23 +1,19 @@
-/* styles généraux */
 body {
-    font-family: 'Lato', sans-serif; /* ou 'Quicksand', selon votre préférence */
-    background-color: var(--background); /* couleur de fond claire */
-    color: var(--ecriture); /* couleur de texte foncée */
-  }
-  
-  .table-container {
-    width: 90%; /* Prend 90% de la largeur de l'écran */
-    margin: 20px auto; /* Centre le conteneur */
-    overflow-x: auto; /* Active le défilement horizontal si nécessaire */
-  }
-  
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background);
+  color: var(--ecriture);
+}
+
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
 h1{
   padding-bottom: 10rem;
 }
-  
-  /* styles du tableau */
- /* Style de base pour ordinateur (inchangé) */
-/* Structure de base du tableau (style desktop) */
+
 table {
   width: 80%;
   margin: 20px auto;
@@ -43,58 +39,51 @@ th, td {
   font-size: 34px;
 }
 
-/* Version mobile - Affichage vertical */
 @media (max-width: 767px) {
-  /* Transformer le tableau en display block */
   table, tbody {
     display: block;
     width: 100%;
   }
-  
-  /* Transformer les rangées en colonnes */
+
   tr {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
   }
-  
-  /* Ajuster les cellules */
+
   td, th {
     display: block;
     width: 100%;
     box-sizing: border-box;
   }
-  
-  /* Réorganiser l'ordre des données */
+
   tr:first-child td {
-    order: 2; /* Logos en premier */
+    order: 2;
   }
-  
+
   tr:last-child th {
-    order: 1; /* Valeurs ensuite */
+    order: 1;
   }
-  
-  /* Ajuster la taille des logos et textes pour mobile */
+
   .logo {
     max-width: 100px;
   }
-  
+
   .valeur {
     font-size: 24px;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
   }
-  
-  /* Faire en sorte que les cellules soient positionnées correctement */
+
   td:nth-child(1), th:nth-child(1) {
     order: 1;
   }
-  
+
   td:nth-child(2), th:nth-child(2) {
     order: 2;
   }
-  
+
   td:nth-child(3), th:nth-child(3) {
     order: 3;
   }
@@ -129,20 +118,19 @@ th, td {
   margin-top: 15px;
 }
 
-/* Version mobile */
 @media (max-width: 767px) {
   .contacts-container {
     flex-direction: column;
   }
-  
+
   .contact-item {
     margin-bottom: 2rem;
   }
-  
+
   .logo {
     max-width: 100px;
   }
-  
+
   .valeur {
     font-size: 24px;
   }
@@ -153,6 +141,5 @@ th, td {
   display: inline-block;
   animation: vague 0.7s infinite alternate;
   background-color: transparent;
-  text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
-
+  text-shadow: 4px 4px 10px rgb(255, 255, 255);
 }

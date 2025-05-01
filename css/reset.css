@@ -1,9 +1,8 @@
-/* Définit la racine à 10px, ce qui donne 1rem = 10px */
 html {
 	font-size: 62.5%;
   }
   
-  /* Reset de base */
+ 
   *,
   *::before,
   *::after {

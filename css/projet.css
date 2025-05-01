@@ -1,140 +1,144 @@
 @import url(reset.css);
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+.project-detail:last-child {
+  margin-bottom: 8rem;
+}
 
 .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    padding-top: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 12rem;
 }
 
 .projects-grid h2{
  color: black;
 }
 .project {
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 5px 15px rgb(11, 11, 11);
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 5px 15px rgb(11, 11, 11);
 
 }
 
 .project:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .project img {
-    max-width: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  border-radius: 5px;
 }
 h2 {
  text-align: center;
 }
 
 .projects-details {
-    padding: 20px;
-    color: var(--ecriture);
+  padding: 20px;
+  color: var(--ecriture);
 
 }
 
 .project-detail {
-    background-color: var(--background);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 20px auto; /* Changed margin to center horizontally */
-    padding: 20px;
-    max-width: 150rem; /* Set a maximum width */
-    width: 90%; /* Set a width relative to the parent */
-    min-height: 200px; /* Set a minimum height */
-    box-sizing: border-box; /* Include padding and border in the width */
-    
+  background-color: var(--background);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 150rem;
+  width: 90%;
+  min-height: 200px;
+  box-sizing: border-box;
+
 }
 
 .project-detail h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .project-detail a {
-    display: inline-block;
-    margin: 10px 0;
-    color: #007BFF;
-    text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  color: #007BFF;
+  text-decoration: none;
 }
 
 .project-detail a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
- section p{
-    background-color: var(--bgcolor);
-    color: var(--ecriture);
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: hidden; /* Hide horizontal overflow */
+section p{
+  background-color: var(--bgcolor);
+  color: var(--ecriture);
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: hidden;
 
 }
 
 code {
-    font-family: Consolas, "Courier New", monospace;
+  font-family: Consolas, "Courier New", monospace;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--background);
-    color: var(--ecriture);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: solid 2px #9a8c98;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--ecriture);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 2px #9a8c98;
 }
 
 .btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 
 
 .bouton-haut {
-    position: fixed; /* Position fixe par rapport à la fenêtre du navigateur */
-    bottom: 7.5rem; /* Distance depuis le bas */
-    right: 20px; /* Distance depuis la droite */
-    z-index: 999; /* Assure que l'image est au-dessus des autres éléments */
-    background-color: #4A4E69;
-    border-radius: 50%; /* Rend l'image ronde (facultatif) */
-    transform: rotate(180deg);
-    border: solid 1.5px white;
+  position: fixed;
+  bottom: 7.5rem;
+  right: 20px;
+  z-index: 999;
+  background-color: #4A4E69;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  border: solid 1.5px white;
 
-  }
-  
-  .bouton-haut img {
-    width: 4rem; /* Ajustez la taille de l'image selon vos besoins */
-    height: 3.25rem;
-    transform: scale(0.7); /* 1.2 = 120% */
-    padding-top: 1rem;
-  }
+}
 
-  .projets{
-    font-size: 32px;
-    display: inline-block;
-    animation: vague 0.7s infinite alternate;
-    background-color: transparent;
-    text-shadow: 4px 4px 10px rgb(255, 255, 255); /* Ombre blanche */
+.bouton-haut img {
+  width: 4rem;
+  height: 3.25rem;
+  transform: scale(0.7);
+  padding-top: 1rem;
+}
+
+.projets{
+  font-size: 32px;
+  display: inline-block;
+  animation: vague 0.7s infinite alternate;
+  background-color: transparent;
+  text-shadow: 4px 4px 10px rgb(255, 255, 255);
 }
