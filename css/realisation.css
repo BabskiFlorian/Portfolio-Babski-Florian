@@ -1,0 +1,144 @@
+.realisation{
+    font-size: 32px;
+    display: inline-block;
+    animation: vague 0.7s infinite alternate;
+    background-color: transparent;
+    text-shadow: 4px 4px 10px rgb(255, 255, 255);
+  }
+  :root {
+
+    --accent-color: #c9Ada7;
+    --accent-color-2: #4a4e69;
+    --section-bg: #383c45;
+    --subsection-bg: #30343d;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--ecriture);
+    margin-bottom: 15rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-color-2));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.section {
+    background-color: var(--bgcolor);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 4rem;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--accent-color);
+    border: solid 1px var(--ecriture);
+}
+
+.section:nth-child(even) {
+    border-left: 4px solid var(--accent-color-2);
+}
+
+.subsection {
+    background-color: var(--background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.section:nth-child(even) .section-title {
+    color: var(--accent-color-2);
+}
+
+.section-title i {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.realisations-list li, .competences-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.realisations-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+
+
+.competences-section {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.competences-technique, .qualites-pro {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+
+/* Icônes */
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.section:nth-child(even) .icon {
+    background-color: var(--accent-color-2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    .subsection {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .competences-section {
+        flex-direction: column;
+    }
+}
